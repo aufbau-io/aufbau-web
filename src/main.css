@@ -1,0 +1,22 @@
+@font-face {
+  font-family: dahlia;
+  src: url(fonts/dahlia-regular.woff) format('woff');
+}
+
+.title {
+  font-family: dahlia;
+  background: #1b1b1b;
+  color: #ECDEBF;
+  flex-direction: column;
+  padding-left: 20%;
+}
+
+.large-text {
+  font-size:6rem;
+  line-height: 6rem;
+}
+
+.medium-text {
+  font-size:2.35rem;
+  line-height: 4rem;
+}
