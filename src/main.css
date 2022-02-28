@@ -9,6 +9,7 @@
   color: #ECDEBF;
   flex-direction: column;
   padding-left: 12%;
+  pointer-events: none;
 }
 
 .large-text {
