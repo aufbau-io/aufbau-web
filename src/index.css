@@ -3,14 +3,22 @@
   src: url(fonts/dahlia-regular.woff) format('woff');
 }
 
-.title {
-  font-family: dahlia;
+.off-black {
   background: #232323;
-  color: #ECDEBF;
+}
+
+#app {
+  max-width: 1000px;
+}
+
+#title {
+  font-family: dahlia;
+  color: #ecd8bf;
   flex-direction: column;
-  padding-left: 12%;
-  pointer-events: none;
+  user-select: none;
+  padding-left: 100px;
   height: 100%;
+  z-index: 10;
 }
 
 .large-text {
@@ -33,4 +41,11 @@
     font-size:1.4rem;
     line-height:2.4rem;
   }
+}
+
+#three {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
 }

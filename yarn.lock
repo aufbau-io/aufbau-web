@@ -1805,6 +1805,11 @@ terser@^5.2.0:
     source-map "~0.7.2"
     source-map-support "~0.5.20"
 
+three@^0.138.1:
+  version "0.138.1"
+  resolved "https://registry.yarnpkg.com/three/-/three-0.138.1.tgz#1839757179fc4a0a933310d017394e1f3b6588f7"
+  integrity sha512-SDoBVP0zIc0f265Sc2qSOo0izme6EL+rQl+PuzzFSadLmbMpzUv6pGhyGGyKE0CGREYZXQRV2xybY1b6NY45lg==
+
 timsort@^0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/timsort/-/timsort-0.3.0.tgz#405411a8e7e6339fe64db9a234de11dc31e02bd4"
