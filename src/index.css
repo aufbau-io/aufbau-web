@@ -11,16 +11,6 @@
   max-width: 1000px;
 }
 
-#title {
-  font-family: dahlia;
-  color: #ecd8bf;
-  flex-direction: column;
-  user-select: none;
-  padding-left: 7%;
-  height: 100%;
-  z-index: 10;
-}
-
 #sidebar {
   height: 100%;
   width: 250px;
@@ -28,31 +18,11 @@
   border-right: 1px solid #f0f0f030;
 }
 
-
-.large-text {
-  font-size:6rem;
-  line-height: 6rem;
-}
-
-.medium-text {
-  font-size:2.25rem;
-  line-height: 3rem;
-}
-
 @media only screen and (max-width: 700px) {
-  #title {
-    padding-left: 10%;
-  }
-
-  .large-text {
-    font-size:3.7rem;
-    line-height: 3rem;
+  #sidebar {
+    width: 0;
   }
   
-  .medium-text {
-    font-size:1.4rem;
-    line-height:2.4rem;
-  }
 }
 
 #three {
