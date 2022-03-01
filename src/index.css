@@ -16,9 +16,9 @@
   color: #ecd8bf;
   flex-direction: column;
   user-select: none;
-  padding-left: 9%;
+  padding-left: 7%;
   height: 100%;
-  z-index: 8;
+  z-index: 10;
 }
 
 .large-text {
