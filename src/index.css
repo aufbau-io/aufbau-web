@@ -21,6 +21,13 @@
   z-index: 10;
 }
 
+#sidebar {
+  width: 250px;
+  background: #232323;
+  border-right: 1px solid #f0f0f030;
+}
+
+
 .large-text {
   font-size:6rem;
   line-height: 6rem;
