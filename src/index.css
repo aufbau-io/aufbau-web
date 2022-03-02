@@ -13,9 +13,43 @@
 
 #sidebar {
   height: 100%;
-  width: 250px;
+  width:120px;
   background: #232323;
-  border-right: 1px solid #f0f0f030;
+  border-right: 1px solid #F2CD5E;
+}
+
+.title {
+  font-family: dahlia;
+  color: #E8E1DB;
+  font-size: 50px;
+  height: 80px;
+  line-height: 70px;
+}
+
+.title.sub {
+  font-size: 20px;
+}
+
+.logo {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border-bottom: solid 1px #F2CD5E;
+}
+
+.button {
+  color: #f0f0f030;
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  font-size: 15px;
+  text-align: center;
+  border-bottom: solid 1px #f0f0f030;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: #F2CD5E;
+  border-bottom: solid 1px #F2CD5E;
 }
 
 @media only screen and (max-width: 700px) {
