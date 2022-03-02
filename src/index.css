@@ -17,18 +17,7 @@
   background: #232323;
   border-right: 1px solid #F2CD5E;
   padding: 15px;
-}
-
-.title {
-  font-family: dahlia;
-  color: #E8E1DB;
-  font-size: 50px;
-  height: 80px;
-  line-height: 70px;
-}
-
-.title.sub {
-  font-size: 20px;
+  user-select: none;
 }
 
 .logo {
