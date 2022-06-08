@@ -1,6 +1,11 @@
 @font-face {
   font-family: dahlia;
-  src: url(fonts/dahlia-regular.woff) format('woff');
+  src: url(fonts/dahlia-regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: kobe;
+  src: url(fonts/Kobe1.1-Regular.woff) format("woff");
 }
 
 .off-black {
@@ -11,43 +16,7 @@
   max-width: 1000px;
 }
 
-#sidebar {
-  height: 100%;
-  width:100px;
-  background: #232323;
-  border-right: 1px solid #F2CD5E;
-  padding: 15px;
-  user-select: none;
-}
-
-.logo {
-  padding-top: 0px;
-  padding-bottom: 10px;
-  border-bottom: solid 1px #F2CD5E;
-}
-
-.button {
-  color: #f0f0f030;
-  width: 100%;
-  height: 40px;
-  line-height: 40px;
-  font-size: 15px;
-  text-align: center;
-  border-bottom: solid 1px #f0f0f030;
-  cursor: pointer;
-}
-
-.button:hover {
-  color: #F2CD5E;
-  border-bottom: solid 1px #F2CD5E;
-}
-
 @media only screen and (max-width: 700px) {
-  #sidebar {
-    width: 0;
-    opacity: 0;
-  }
-  
 }
 
 #three {
