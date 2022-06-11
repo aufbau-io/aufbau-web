@@ -39,7 +39,10 @@
     let rollOverMesh, rollOverMaterial;
     let cubeGeo, cubeMaterial; 
 
-    let aspect = window.innerWidth  / window.innerHeight;
+    const width = document.documentElement.clientWidth
+    const height = document.documentElement.clientHeight
+
+    let aspect = width  / height;
     let d = 300;
 
     const objects = [];
@@ -99,7 +102,7 @@
 
       renderer = new THREE.WebGLRenderer( { antialias: true } );
       renderer.setPixelRatio( window.devicePixelRatio );
-      renderer.setSize( window.innerWidth, window.innerHeight );
+      renderer.setSize( width, height );
       document.getElementById("three").appendChild( renderer.domElement );
 
       document.addEventListener( 'pointermove', onPointerMove );
@@ -139,7 +142,7 @@
 
     function onPointerMove( event ) {
 
-      pointer.set( ( event.clientX / window.innerWidth ) * 2 - 1, - ( event.clientY / window.innerHeight ) * 2 + 1 );
+      pointer.set( ( event.clientX / width ) * 2 - 1, - ( event.clientY / height ) * 2 + 1 );
 
       raycaster.setFromCamera( pointer, camera );
 
@@ -160,7 +163,7 @@
 
     function onPointerDown( event ) {
 
-      pointer.set( ( event.clientX / window.innerWidth ) * 2 - 1, - ( event.clientY / window.innerHeight ) * 2 + 1 );
+      pointer.set( ( event.clientX / width ) * 2 - 1, - ( event.clientY / height ) * 2 + 1 );
 
       raycaster.setFromCamera( pointer, camera );
 
