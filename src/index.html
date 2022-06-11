@@ -23,6 +23,10 @@
     
     import * as THREE from 'three';
 
+    window.onresize = () => {
+      location.reload();
+    }
+
     let camera, scene, renderer;
     let plane;
     let pointer, raycaster, isShiftDown = false;
