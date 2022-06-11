@@ -117,17 +117,25 @@
 
     function onWindowResize() {
 
-      renderer.setSize( window.innerWidth, window.innerHeight );
-      
-      camera.aspect = window.innerWidth / window.innerHeight;
-      camera.updateProjectionMatrix();
+      function resize() {
+        renderer.setSize( window.innerWidth, window.innerHeight );
+        
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
 
-      if (window.innerWidth > 800) {
         location.reload();
+
+        render();
       }
 
-      render();
-
+      if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
+        // tablet
+        resize();
+      }
+      else if (/Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(ua)) {
+        // phone
+        resize();
+      }
     }
 
     function onPointerMove( event ) {
