@@ -32,10 +32,6 @@
     
     import * as THREE from 'three';
 
-    window.onresize = () => {
-      location.reload();
-    }
-
     let camera, scene, renderer;
     let plane;
     let pointer, raycaster, isShiftDown = false;
@@ -121,10 +117,14 @@
 
     function onWindowResize() {
 
+      renderer.setSize( window.innerWidth, window.innerHeight );
+      
       camera.aspect = window.innerWidth / window.innerHeight;
       camera.updateProjectionMatrix();
 
-      renderer.setSize( window.innerWidth, window.innerHeight );
+      if (window.innerWidth > 800) {
+        location.reload();
+      }
 
       render();
 
