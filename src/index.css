@@ -24,10 +24,10 @@
   bottom: 0;
   left: 0;
   background: #232323bb;
-  border-top: solid 2px #feb74cbb;
+  border-top: solid 1px #feb74cbb;
   color: #f0f0f0;
 
-  height: 175px;
+  height: 170px;
   width: 100%;
 
   display: flex;
